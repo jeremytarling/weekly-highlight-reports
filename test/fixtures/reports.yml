@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  genre: MyString
+  date: 2009-07-02
+  deliveries_this_week: MyText
+  upcoming_deliveries: MyText
+  successes: MyText
+  problems_and_issues: MyText
+
+two:
+  genre: MyString
+  date: 2009-07-02
+  deliveries_this_week: MyText
+  upcoming_deliveries: MyText
+  successes: MyText
+  problems_and_issues: MyText

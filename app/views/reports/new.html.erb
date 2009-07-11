@@ -1,0 +1,35 @@
+<h1>New report</h1>
+
+<% form_for(@report) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :genre %><br />
+    <%= f.select :genre, {"Knowledge"=>"Knowledge", "DEC"=>"DEC", "Childrens"=>"Childrens", "Learning"=>"Learning", "Pan-genre"=>"Pan-genre"} %>
+  </p>
+  <p>
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </p>
+  <p>
+    <%= f.label :deliveries_this_week %><br />
+    <%= f.text_area(:deliveries_this_week, :size => '60x3', :class=>"widgEditor") %>
+  </p>
+  <p>
+    <%= f.label :upcoming_deliveries %><br />
+    <%= f.text_area(:upcoming_deliveries, :size => '60x3', :class=>"widgEditor") %>
+  </p>
+  <p>
+    <%= f.label :successes %><br />
+    <%= f.text_area(:successes, :size => '60x3', :class=>"widgEditor") %>
+  </p>
+  <p>
+    <%= f.label :problems_and_issues %><br />
+    <%= f.text_area(:problems_and_issues, :size => '60x3', :class=>"widgEditor") %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', reports_path %>
